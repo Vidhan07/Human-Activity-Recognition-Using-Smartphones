@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,7))
+sns.boxplot(x='Activity', y='angle(Y,gravityMean)', data = train, showfliers=False)
+plt.ylabel("Angle between Y-axis and gravityMean")
+plt.title('Box plot of angle(Y,gravityMean) column across various activities')
+plt.xticks(rotation = 90)
+plt.axhline(y=-0.35, xmin=0.01, dashes=(3,3))
